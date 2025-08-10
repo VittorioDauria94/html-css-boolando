@@ -1,6 +1,7 @@
 /* Custom Properties */
 :root {
     /* backgorund colors */
+    --bg-orange: rgb(255, 106, 0);
 
     /* Text colors */
     --tx-white: white;
@@ -16,6 +17,9 @@
     --pd-sm: 10px;
     --pd-md: 15px;
     --pd-lg: 20px;
+    --pd-top-btm-sm: 15px 0;
+    --pd-top-btm-md: 25px 0;
+    --pd-top-btm-lg: 50px 0;
 }
 
 /* css reset */
@@ -51,4 +55,49 @@ body {
 
 .flex {
     display: flex;
+}
+
+/* Header */
+.header {
+    background-color: var(--bg-orange);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+
+}
+
+.header-content {
+    padding: var(--pd-top-btm-md);
+    justify-content: space-between;
+}
+
+.navbar,
+.logo,
+.header-icons {
+    flex-basis: 30%;
+}
+
+.navbar-list a {
+    color: var(--tx-white);
+}
+
+.navbar-list {
+    gap: 15px;
+}
+
+.header-icons {
+    text-align: right;
+}
+
+/* debug */
+.profile,
+.likes,
+.cart {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: aqua;
 }
