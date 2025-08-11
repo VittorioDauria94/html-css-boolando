@@ -3,6 +3,7 @@
     /* backgorund colors */
     --bg-orange: rgb(255, 106, 0);
     --bg-black: rgb(26, 26, 26);
+    --bg-white: white;
 
     /* Text colors */
     --tx-white: white;
@@ -90,6 +91,7 @@ body {
 
 .navbar-list a {
     color: var(--tx-white);
+    font-weight: 600;
 }
 
 .navbar-list {
@@ -100,18 +102,13 @@ body {
     text-align: center;
 }
 
-.header-icons {
-    text-align: right;
+.logo img {
+    height: 30px;
 }
 
-/* debug */
-.profile,
-.likes,
-.cart {
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-    background-color: aqua;
+.header-icons {
+    text-align: right;
+    color: var(--bg-white);
 }
 
 /* Main */
