@@ -135,11 +135,15 @@ body {
 .heart {
     right: 0;
     top: 10px;
+    padding: 0 10px;
+    background-color: var(--bg-white);
+    font-size: 2rem;
+    text-align: center;
+}
 
-    /* debug */
-    height: 40px;
-    width: 40px;
-    background-color: yellow;
+.heart:hover {
+    color: red;
+    cursor: pointer;
 }
 
 .discount {
