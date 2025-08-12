@@ -8,6 +8,8 @@
     /* Text colors */
     --tx-white: white;
     --tx-black: black;
+    --tx-gray: rgb(125, 130, 133);
+    --tx-red: red;
 
     /* Margin */
     --mr-sm: 5px;
@@ -147,23 +149,21 @@ body {
 }
 
 .discount {
-    bottom: 50px;
+    bottom: 30px;
     left: 0;
-
-    /* debug */
-    height: 20px;
-    width: 40px;
     background-color: red;
+    color: var(--tx-white);
+    padding: 5px 10px;
+    font-size: 12px;
 }
 
 .sustainability {
-    bottom: 50px;
+    bottom: 30px;
     left: 0px;
-
-    /* debug */
-    height: 20px;
-    width: 40px;
     background-color: green;
+    color: var(--tx-white);
+    padding: 5px 10px;
+    font-size: 12px;
 }
 
 .discount+.sustainability {
@@ -172,10 +172,29 @@ body {
 
 .product-description {
     width: 100%;
+    padding: 5px 0;
+    line-height: 19px;
+}
 
-    /* debug */
-    height: 30px;
-    background-color: purple;
+.brand {
+    color: var(--tx-gray);
+    font-size: 12px;
+}
+
+.product {
+    font-size: 16px;
+}
+
+.price {
+    color: var(--tx-red);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.original-price {
+    color: var(--tx-gray);
+    text-decoration: line-through;
+    margin-left: var(--mr-sm);
 }
 
 .img-default,
