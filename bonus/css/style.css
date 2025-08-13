@@ -11,8 +11,8 @@
 
     /* Margin */
     --mr-sm: 5px;
-    --mr-md: 10px;
-    --mr-lg: 15px;
+    --mr-md: 25px;
+    --mr-lg: 50px;
 
     /* Padding */
     --pd-xs: 5px;
@@ -90,7 +90,7 @@ main {
     align-items: center;
 }
 
-/* header */
+/* Header */
 
 .header {
     height: var(--pd-header);
@@ -112,4 +112,41 @@ main {
 
 .home {
     color: var(--tx-blue);
+}
+
+/* Main */
+
+/* Hero */
+.rubber-duck-bg {
+    width: 50%;
+}
+
+.page-title {
+    width: 50%;
+    background-image: url(../img/banner-bg.png);
+}
+
+.page-title > * {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: var(--mr-md);
+    color: var(--tx-black);
+}
+
+.hero-title {
+    width: 80%;
+    font-size: 4rem;
+}
+
+.hero-paragraph {
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+.buy-now {
+    display: block;
+    width: 50%;
+    font-size: 1.5rem;
+    border: 2px solid var(--tx-black);
+    padding: 15px 20px;
 }
