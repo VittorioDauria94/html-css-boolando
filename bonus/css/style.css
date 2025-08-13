@@ -19,10 +19,10 @@
     --pd-sm: 10px;
     --pd-md: 25px;
     --pd-lg: 50px;
-    --pd-top-btm-sm: 20px 0;
+    --pd-top-btm-sm: 15px 0;
     --pd-top-btm-md: 25px 0;
     --pd-top-btm-lg: 50px 0;
-    --pd-header: 80px;
+    --pd-header: 100px;
 }
 
 /* css reset */
@@ -76,4 +76,40 @@ footer {
 
 .col {
     width: 30%;
+}
+
+main {
+    padding-top: var(--pd-header);
+}
+
+.justify-content-sb {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* header */
+
+.header {
+    height: var(--pd-header);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+.header-content {
+    padding: var(--pd-top-btm-sm);
+}
+
+.navbar-content {
+    gap: 25px;
+    color: var(--tx-black);
+}
+
+.home {
+    color: var(--tx-blue);
 }
