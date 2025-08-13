@@ -54,6 +54,7 @@ header {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    color: var(--tx-black);
 }
 
 main,
@@ -63,6 +64,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     line-height: 1.24;
+    color: var(--tx-black);
 }
 
 /* Utility */
@@ -76,8 +78,12 @@ footer {
     display: flex;
 }
 
-.col {
+.col-30 {
     width: 30%;
+}
+
+.col-45 {
+    width: 45%;
 }
 
 main {
@@ -86,6 +92,10 @@ main {
 
 .justify-content-sb {
     justify-content: space-between;
+}
+
+.justify-content-sa {
+    justify-content: space-around;
 }
 
 .align-items-center {
@@ -110,7 +120,6 @@ main {
 
 .navbar-content {
     gap: 25px;
-    color: var(--tx-black);
 }
 
 .home {
@@ -120,6 +129,10 @@ main {
 /* Main */
 
 /* Hero */
+.hero {
+    max-height: 560px;
+}
+
 .rubber-duck-bg {
     width: 50%;
 }
@@ -133,7 +146,6 @@ main {
     text-align: center;
     margin: 0 auto;
     margin-top: var(--mr-md);
-    color: var(--tx-black);
 }
 
 .hero-title {
@@ -154,7 +166,7 @@ main {
     padding: 15px 20px;
 }
 
-/* Product description section */
+/* Product description */
 
 .product-description {
     padding: var(--pd-top-btm-xl);
@@ -162,7 +174,6 @@ main {
 
 .description-title {
     width: 60%;
-    color: var(--tx-black);
     text-align: center;
     margin: 0 auto;
     font-size: 25px;
@@ -170,7 +181,6 @@ main {
 
 .description-paragraph {
     width: 60%;
-    color: var(--tx-black);
     text-align: center;
     margin: 0 auto;
     font-size: 16px;
@@ -180,4 +190,36 @@ main {
 
 .capitan-duck {
     align-self: center;
+}
+
+.form-title {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 56px;
+    margin-bottom: var(--mr-lg);
+}
+
+/* Feedback */
+.feedback {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.stars {
+    text-align: center;
+    margin-top: var(--mr-md)
+}
+
+.feedback-author {
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    margin-top: var(--mr-sm);
+}
+
+.swiper {
+    text-align: center;
+    margin-top: var(--mr-md);
 }
