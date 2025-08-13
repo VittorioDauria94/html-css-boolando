@@ -1,0 +1,79 @@
+/* Custom properties */
+:root {
+    /* backgorund colors */
+    --bg-gray: rgb(247, 247, 247);
+
+    /* Text colors */
+    --tx-blue: #2E45CC;
+    --tx-green: #04DF6C;
+    --tx-black: #3D3A38;
+
+
+    /* Margin */
+    --mr-sm: 5px;
+    --mr-md: 10px;
+    --mr-lg: 15px;
+
+    /* Padding */
+    --pd-xs: 5px;
+    --pd-sm: 10px;
+    --pd-md: 25px;
+    --pd-lg: 50px;
+    --pd-top-btm-sm: 20px 0;
+    --pd-top-btm-md: 25px 0;
+    --pd-top-btm-lg: 50px 0;
+    --pd-header: 80px;
+}
+
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    /* font */
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+main,
+footer {
+    /* font */
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.24;
+}
+
+/* Utility */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    width: 30%;
+}
