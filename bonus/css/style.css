@@ -2,6 +2,7 @@
 :root {
     /* backgorund colors */
     --bg-gray: rgb(247, 247, 247);
+    --bg-white: white;
 
     /* Text colors */
     --tx-blue: #2E45CC;
@@ -10,7 +11,7 @@
 
 
     /* Margin */
-    --mr-sm: 5px;
+    --mr-sm: 10px;
     --mr-md: 25px;
     --mr-lg: 50px;
 
@@ -22,6 +23,7 @@
     --pd-top-btm-sm: 15px 0;
     --pd-top-btm-md: 25px 0;
     --pd-top-btm-lg: 50px 0;
+    --pd-top-btm-xl: 100px 0;
     --pd-header: 100px;
 }
 
@@ -94,6 +96,7 @@ main {
 
 .header {
     height: var(--pd-header);
+    background-color: var(--bg-white);
     position: fixed;
     top: 0;
     left: 0;
@@ -126,7 +129,7 @@ main {
     background-image: url(../img/banner-bg.png);
 }
 
-.page-title > * {
+.page-title>* {
     text-align: center;
     margin: 0 auto;
     margin-top: var(--mr-md);
@@ -139,14 +142,42 @@ main {
 }
 
 .hero-paragraph {
-    width: 50%;
+    width: 60%;
     font-size: 1.5rem;
 }
 
 .buy-now {
     display: block;
-    width: 50%;
-    font-size: 1.5rem;
+    width: 40%;
+    font-size: 1.2rem;
     border: 2px solid var(--tx-black);
     padding: 15px 20px;
+}
+
+/* Product description section */
+
+.product-description {
+    padding: var(--pd-top-btm-xl);
+}
+
+.description-title {
+    width: 60%;
+    color: var(--tx-black);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.description-paragraph {
+    width: 60%;
+    color: var(--tx-black);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-top: var(--mr-sm);
+    margin-bottom: var(--mr-lg);
+}
+
+.capitan-duck {
+    align-self: center;
 }
