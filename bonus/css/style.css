@@ -250,3 +250,47 @@ main {
     font-weight: 600;
     font-size: 24px;
 }
+
+/* FAQs */
+
+.faq {
+    padding: var(--pd-top-btm-lg);
+}
+
+.faq-title {
+    font-size: 48px;
+}
+
+.faq-immage {
+    margin-top: var(--mr-lg);
+}
+
+summary {
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: var(--mr-sm);
+}
+
+summary::after {
+    content: " +";
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+details[open] summary::after {
+    content: " −";
+}
+
+details {
+    margin: var(--pd-top-btm-md);
+}
+
+.faq-question {
+    display: inline;
+    font-size: 24px;
+}
+
+.faq-answer {
+    padding-top: var(--mr-md);
+    border-top: 2px solid var(--bg-gray);
+}
