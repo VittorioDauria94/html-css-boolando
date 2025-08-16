@@ -4,6 +4,9 @@
     --bg-gray: rgb(247, 247, 247);
     --bg-white: white;
 
+    /* border colors */
+    --border-gray: rgb(189, 185, 185);
+
     /* Text colors */
     --tx-blue: #2E45CC;
     --tx-green: #04DF6C;
@@ -100,6 +103,10 @@ main {
     justify-content: space-around;
 }
 
+.justify-content-center {
+    justify-content: center;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -107,6 +114,7 @@ main {
 .text-align-center {
     text-align: center;
 }
+
 
 /* Header */
 
@@ -141,6 +149,7 @@ main {
 
 .rubber-duck-bg {
     width: 50%;
+    object-fit: cover; 
 }
 
 .page-title {
@@ -293,7 +302,7 @@ details {
 
 .faq-answer {
     padding-top: var(--mr-md);
-    border-top: 2px solid var(--bg-gray);
+    border-top: 2px solid var(--border-gray);
 }
 
 /* features */
@@ -303,10 +312,56 @@ details {
 }
 
 .features div:nth-child(2) {
-    border-right: 2px solid var(--bg-gray);
-    border-left: 2px solid var(--bg-gray);
+    border-right: 2px solid var(--border-gray);
+    border-left: 2px solid var(--border-gray);
 }
 
 .features {
     padding-bottom: var(--pd-xl);
+}
+
+/* Footer */
+.footer-top {
+    background-color: var(--bg-gray);
+    padding: var(--pd-top-btm-lg)
+}
+
+.footer-content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.footer-title {
+    font-size: 68px;
+    font-weight: bolder;
+}
+
+.footer-paragraph {
+    font-size: 20px;
+    margin: var(--pd-md) 0;
+}
+
+.email-input {
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--bg-gray);
+}
+
+.contact-me {
+    border-bottom: 2px solid var(--border-gray);
+    margin-bottom: var(--mr-lg);
+}
+
+.social {
+    gap: 20px;
+}
+
+.copyright {
+    background-color: var(--bg-white);
+    width: 50%;
+    margin: 0 auto;
+    font-size: 24px;
+    padding: var(--pd-top-btm-md);
+    font-weight: 600;
 }
