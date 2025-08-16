@@ -20,6 +20,7 @@
     --pd-sm: 10px;
     --pd-md: 25px;
     --pd-lg: 50px;
+    --pd-xl: 150px;
     --pd-top-btm-xs: 10px 0;
     --pd-top-btm-sm: 15px 0;
     --pd-top-btm-md: 25px 0;
@@ -293,4 +294,19 @@ details {
 .faq-answer {
     padding-top: var(--mr-md);
     border-top: 2px solid var(--bg-gray);
+}
+
+/* features */
+.feature-title {
+    padding: var(--pd-top-btm-sm);
+    font-size: 24px;
+}
+
+.features div:nth-child(2) {
+    border-right: 2px solid var(--bg-gray);
+    border-left: 2px solid var(--bg-gray);
+}
+
+.features {
+    padding-bottom: var(--pd-xl);
 }
